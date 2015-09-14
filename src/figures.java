@@ -4,6 +4,7 @@
  * init 2015-09-14
  * last 2015-09-14
  */
+
 public class figures {
 
 	public static void main(String[] args) {
