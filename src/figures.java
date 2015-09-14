@@ -22,8 +22,7 @@ public class figures {
 		
 		// tea cup
 		System.out.println("\\        /");
-		System.out.println(" \\      /");
-		System.out.println("  ------");
+		System.out.println(" \\______/");
 		System.out.println("+--------+");
 		
 		//break
@@ -36,7 +35,6 @@ public class figures {
 		System.out.println("|  STOP  |");
 		System.out.println("\\        /");
 		System.out.println(" \\______/");
-		System.out.println("  ______");
 
 		//break
 		System.out.println();
