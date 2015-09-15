@@ -1,6 +1,6 @@
 /*
  * Figures2 - Apparently this also figures
- * Nathan Fallahia
+ * Nathan Fallahi
  * init 2015-09-15
  * last 2015-09-15
  */
