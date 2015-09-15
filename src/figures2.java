@@ -10,9 +10,9 @@ public class figures2 {
 	public static void main(String[] args) {
 		egg();
 		System.out.println();
-		teacup();
+		teaCup();
 		System.out.println();
-		stopsign();
+		stopSign();
 		System.out.println();
 		hat();
 	}
@@ -31,7 +31,7 @@ public class figures2 {
 	/*
 	 * Draw tea cup
 	 */
-	public static void teacup() {
+	public static void teaCup() {
 		System.out.println("\\        /");
 		System.out.println(" \\______/");
 		System.out.println("+--------+");
@@ -40,7 +40,7 @@ public class figures2 {
 	/*
 	 * Draw stop sign
 	 */
-	public static void stopsign() {
+	public static void stopSign() {
 		System.out.println("  ______");
 		System.out.println(" /      \\");
 		System.out.println("/        \\");
