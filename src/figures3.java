@@ -2,7 +2,7 @@
  * Figures3 - Figures a lot more
  * Nathan Fallahi
  * init 2015-09-15
- * last 2015-09-15
+ * last 2015-09-16
  */
 
 public class figures3 {
@@ -23,7 +23,7 @@ public class figures3 {
 	}
 	
 	/*
-	 * Draw egg
+	 * Draw top portion
 	 */
 	public static void top() {
 		System.out.println("  ______");
@@ -32,7 +32,7 @@ public class figures3 {
 	}
 	
 	/*
-	 * Draw tea cup
+	 * Draw bottom portion
 	 */
 	public static void bot() {
 		System.out.println("\\        /");
@@ -40,14 +40,14 @@ public class figures3 {
 	}
 	
 	/*
-	 * Draw stop sign
+	 * Draw stop text
 	 */
 	public static void stop() {
 		System.out.println("|  STOP  |");
 	}
 	
 	/*
-	 * draw hat
+	 * draw line
 	 */
 	public static void line() {
 		System.out.println("+--------+");
