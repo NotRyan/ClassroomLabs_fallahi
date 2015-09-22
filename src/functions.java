@@ -2,7 +2,7 @@
  * functions done in class
  * Nathan Fallahi
  * init 2015-09-21
- * last 2015-09-21
+ * last 2015-09-22
  */
 
 // imports
@@ -10,46 +10,28 @@ import java.util.Scanner;
 
 public class functions {
 
-	private static Scanner scanner;
-
 	public static void main(String[] args) {
-		scanner = new Scanner(System.in);
-		System.out.print("First number: ");
+		System.out.println("What is your calculation?");
+		Scanner scanner = new Scanner(System.in);
 		int num1 = scanner.nextInt();
-		System.out.print("Second number: ");
+		String op = scanner.next();
 		int num2 = scanner.nextInt();
-		add(num1, num2);
-		subtract(num1, num2);
-		multiply(num1, num2);
-		divide(num1, num2);
-		
+		System.out.println(calculate(num1, op, num2));
+
 	}
 	
-	/*
-	 * Addition
-	 */
-	public static void add(int x, int y) {
-		System.out.println("Adding numbers gives a sum of " + (x + y));
+	public static int calculate(int num1, String op, int num2) {
+		switch (op.charAt(0)) {
+		case '+': 
+			return num1 + num2;
+		case '-':
+            return num1 - num2;
+        case '*':
+            return num1 * num2;
+        case '/':
+            return num1 / num2;
+		}
+		throw new IllegalArgumentException("Unknown operator:" + op);
 	}
 	
-	/*
-	 * Subtraction
-	 */
-	public static void subtract(int x, int y) {
-		System.out.println("Subtracting numbers gives a difference of " + (x - y));
-	}
-	
-	/*
-	 * Multiplication
-	 */
-	public static void multiply(int x, int y) {
-		System.out.println("Multiplying numnbers gives a product of " + (x * y));
-	}
-	
-	/*
-	 * Division
-	 */
-	public static void divide(int x, int y) {
-		System.out.println("Dividing numbers gives a product of " + (x / y));
-	}
 }
