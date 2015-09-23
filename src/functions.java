@@ -10,17 +10,30 @@ import java.util.Scanner;
 
 public class functions {
 
+	private static Scanner input;
+
 	public static void main(String[] args) {
 		System.out.println("What is your calculation?");
-		Scanner scanner = new Scanner(System.in);
-		int num1 = scanner.nextInt();
-		String op = scanner.next();
-		int num2 = scanner.nextInt();
-		System.out.println(calculate(num1, op, num2));
-
+		input = new Scanner(System.in);
+		
+		// scans for imput
+		double num1 = input.nextDouble();
+		String op = input.next();
+		double num2 = input.nextDouble();
+		
+		// sets up answer
+		double answer = calculate(num1, op, num2);
+		
+		// checks for and cleans up decimal
+		if (answer % 1 == 0) {
+			int rAnswer = (int) answer;
+			System.out.println(rAnswer);
+		} else {
+			System.out.println(answer);
+		}
 	}
 	
-	public static int calculate(int num1, String op, int num2) {
+	public static double calculate(double num1, String op, double num2) {
 		switch (op.charAt(0)) {
 		case '+': 
 			return num1 + num2;
@@ -31,7 +44,7 @@ public class functions {
         case '/':
             return num1 / num2;
 		}
-		throw new IllegalArgumentException("Unknown operator:" + op);
+//		throw new IllegalArgumentException("Unknown operator:" + op);
 	}
 	
 }
