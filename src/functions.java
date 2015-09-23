@@ -44,7 +44,7 @@ public class functions {
         case '/':
             return num1 / num2;
 		}
-//		throw new IllegalArgumentException("Unknown operator:" + op);
+		throw new IllegalArgumentException("Unknown operator:" + op);
 	}
 	
 }
