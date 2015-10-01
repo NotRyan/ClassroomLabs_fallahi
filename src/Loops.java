@@ -6,7 +6,8 @@ public class Loops {
 //		numLoop();
 //		goalPost();
 //		box();
-		nestedBox();
+//		nestedBox();
+		test1();
 	}
 	
 	public static void numLoop() {
@@ -39,6 +40,15 @@ public class Loops {
 				System.out.print("* ");
 			}
 			System.out.println();
+		}
+	}
+	
+	public static void test1() {
+		for (int i=1; i<6; i++) {
+			for (int j=0; j<(-1*i+5); j++) {
+				System.out.print(".");
+			}
+			System.out.println(i);
 		}
 	}
 }
