@@ -7,7 +7,7 @@ public class Loops {
 //		goalPost();
 //		box();
 //		nestedBox();
-		test1();
+		test1(2);
 	}
 	
 	public static void numLoop() {
@@ -43,12 +43,12 @@ public class Loops {
 		}
 	}
 	
-	public static void test1() {
-		for (int i=1; i<6; i++) {
-			for (int j=0; j<(-1*i+5); j++) {
-				System.out.print(".");
+	public static void test1(int scale) {
+		for (int i=0; i<7*scale; i++) {
+			for (int j=0; j<5*scale; j++) {
+				System.out.print("*");
 			}
-			System.out.println(i);
+			System.out.println();
 		}
 	}
 }
