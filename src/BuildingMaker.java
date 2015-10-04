@@ -2,15 +2,18 @@
  * Space Needle Project
  * Nathan Fallahi
  * init 2015-09-30
- * last 2015-10-02
+ * last 2015-10-03
  */
 
 // imports
-import java.util.Scanner;
+//import java.util.Scanner;
+//import java.lang.Math.pow;
 
 public class BuildingMaker {
 	
-	private static Scanner input;
+//	private static Scanner input;
+	
+	public static final double SCALE = 2;
 	
 	public static void main(String[] args) {
 //		System.out.println("Hi! My name is Jeff, a Skynet Building Maker 2000.");
@@ -31,7 +34,45 @@ public class BuildingMaker {
 	}
 	
 	public static void spaceNeedle() {
+		// antenna
+		for (int i=0; i<4*SCALE; i++) {
+			for (int j=0; j<12*SCALE; j++) {
+				System.out.print(" ");
+			}
+			for (int j=0; j<1*SCALE; j++) {
+				System.out.print("||");
+			}
+			System.out.println();
+		}
 		
+		// head1
+		for (int i=0; i<4*SCALE; i++) {
+			for (double j=3*SCALE+Math.pow(SCALE, SCALE); j>i*SCALE; j--) {
+				System.out.print("   ");
+			}
+			for (int j=0; j<1*SCALE; j++) {
+				System.out.print("__");
+			}
+			for (int j=0; j<1*SCALE; j++) {
+				System.out.print("/");
+			}
+			for (int j=0; j<i*SCALE; j++) {
+				System.out.print(":::");
+			}
+			for (int j=0; j<1*SCALE; j++) {
+				System.out.print("||");
+			}
+			for (int j=0; j<i*SCALE; j++) {
+				System.out.print(":::");
+			}
+			for (int j=0; j<1*SCALE; j++) {
+				System.out.print("\\");
+			}
+			for (int j=0; j<1*SCALE; j++) {
+				System.out.print("__");
+			}
+			System.out.println();
+		}
 	}
 	
 	public static void eiffelTower() {
