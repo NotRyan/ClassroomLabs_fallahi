@@ -46,31 +46,31 @@ public class BuildingMaker {
 		}
 		
 		// head1
-		for (int i=4*SCALE; i>0; i--) {
-			for (int j=3*SCALE; j<i; j++) {
+		for (int i=3*SCALE; i>-1; i--) {
+			for (int j=-3*i*SCALE; j+i<i; j++) {
 				System.out.print(" ");
 			}
-			for (int j=0; j<1; j++) {
+			for (int j=0; j<SCALE; j++) {
 				System.out.print("__");
 			}
-			for (int j=0; j<1; j++) {
+			for (int j=0; j<SCALE; j++) {
 				System.out.print("/");
 			}
-			for (int j=SCALE; j>i; j--) {
-				System.out.print(":::");
+			for (int j=3; j>i; j--) {
+				System.out.print(i);
 			}
-			for (int j=0; j<1; j++) {
-				System.out.print("||");
-			}
-			for (int j=0; j<i; j++) {
-				System.out.print(":::");
-			}
-			for (int j=0; j<1; j++) {
-				System.out.print("\\");
-			}
-			for (int j=0; j<1*SCALE; j++) {
-				System.out.print("__");
-			}
+//			for (int j=0; j<SCALE; j++) {
+//				System.out.print("||");
+//			}
+//			for (int j=4*SCALE; j>i; j--) {
+//				System.out.print(":::");
+//			}
+//			for (int j=0; j<SCALE; j++) {
+//				System.out.print("\\");
+//			}
+//			for (int j=0; j<1*SCALE; j++) {
+//				System.out.print("__");
+//			}
 			System.out.println();
 		}
 	}
