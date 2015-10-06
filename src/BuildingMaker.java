@@ -56,7 +56,7 @@ public class BuildingMaker {
 			for (int j=0; j<SCALE; j++) {
 				System.out.print("/");
 			}
-			for (int j=3; j>i; j--) {
+			for (int j=3*SCALE; j>i; j--) {
 				System.out.print(i);
 			}
 //			for (int j=0; j<SCALE; j++) {
