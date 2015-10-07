@@ -13,7 +13,7 @@ public class BuildingMaker {
 	
 //	private static Scanner input;
 	
-	public static final int SCALE = 1;
+	public static final int SCALE = 2;
 	
 	public static void main(String[] args) {
 //		System.out.println("Hi! My name is Jeff, a Skynet Building Maker 2000.");
@@ -46,31 +46,31 @@ public class BuildingMaker {
 		}
 		
 		// head1
-		for (int i=3*SCALE; i>-1; i--) {
-			for (int j=-3*i*SCALE; j+i<i; j++) {
+		for (int i=0; i<4*SCALE; i++) {
+			for (int j=1; j<=(SCALE*3)*(SCALE*4)-(i+1)*(SCALE*3); j++) {
 				System.out.print(" ");
 			}
-			for (int j=0; j<SCALE; j++) {
+			for (int j=0; j<1*SCALE; j++) {
 				System.out.print("__");
 			}
-			for (int j=0; j<SCALE; j++) {
+			for (int j=0; j<1*SCALE; j++) {
 				System.out.print("/");
 			}
-			for (int j=3*SCALE; j>i; j--) {
-				System.out.print(i);
+			for (int j=0; j<i*SCALE; j++) {
+				System.out.print(":::");
 			}
-//			for (int j=0; j<SCALE; j++) {
-//				System.out.print("||");
-//			}
-//			for (int j=4*SCALE; j>i; j--) {
-//				System.out.print(":::");
-//			}
-//			for (int j=0; j<SCALE; j++) {
-//				System.out.print("\\");
-//			}
-//			for (int j=0; j<1*SCALE; j++) {
-//				System.out.print("__");
-//			}
+			for (int j=0; j<1*SCALE; j++) {
+				System.out.print("||");
+			}
+			for (int j=0; j<i*SCALE; j++) {
+				System.out.print(":::");
+			}
+			for (int j=0; j<1*SCALE; j++) {
+				System.out.print("\\");
+			}
+			for (int j=0; j<1*SCALE; j++) {
+				System.out.print("__");
+			}
 			System.out.println();
 		}
 	}
