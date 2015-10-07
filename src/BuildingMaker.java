@@ -13,7 +13,7 @@ public class BuildingMaker {
 	
 //	private static Scanner input;
 	
-	public static final int SCALE = 2;
+	public static final int SCALE = 1;
 	
 	public static void main(String[] args) {
 //		System.out.println("Hi! My name is Jeff, a Skynet Building Maker 2000.");
@@ -36,7 +36,7 @@ public class BuildingMaker {
 	public static void spaceNeedle() {
 		// antenna
 		for (int i=0; i<4*SCALE; i++) {
-			for (int j=0; j<12*SCALE; j++) {
+			for (int j=0; j<(SCALE*3)*(SCALE*4); j++) {
 				System.out.print(" ");
 			}
 			for (int j=0; j<1*SCALE; j++) {
