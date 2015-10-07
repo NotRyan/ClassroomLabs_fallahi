@@ -45,7 +45,7 @@ public class BuildingMaker {
 			System.out.println();
 		}
 		
-		// head1
+		// forehead
 		for (int i=0; i<4*SCALE; i++) {
 			for (int j=0; j<12*SCALE*SCALE-(i+1)*(SCALE*3); j++) {
 				System.out.print(" ");
@@ -119,6 +119,70 @@ public class BuildingMaker {
 			}
 			System.out.println();
 		}
+		
+		// body
+		for (int i=0; i<16*SCALE; i++) {
+			for (int j=0; j<12*SCALE*SCALE-3*SCALE; j++) {
+				System.out.print(" ");
+			}
+			for (int j=0; j<SCALE; j++) {
+				System.out.print("|");
+			}
+			for (int j=0; j<1*SCALE; j++) {
+				System.out.print("%%");
+			}
+			for (int j=0; j<1*SCALE; j++) {
+				System.out.print("||");
+			}
+			for (int j=0; j<1*SCALE; j++) {
+				System.out.print("%%");
+			}
+			for (int j=0; j<SCALE; j++) {
+				System.out.print("|");
+			}
+			System.out.println();
+		}
+		
+		// base
+		for (int i=0; i<4*SCALE; i++) {
+			for (int j=0; j<12*SCALE*SCALE-(i+1)*(SCALE*3); j++) {
+				System.out.print(" ");
+			}
+			for (int j=0; j<SCALE; j++) {
+				System.out.print("__");
+			}
+			for (int j=0; j<SCALE; j++) {
+				System.out.print("/");
+			}
+			for (int j=0; j<i*SCALE; j++) {
+				System.out.print(":::");
+			}
+			for (int j=0; j<SCALE; j++) {
+				System.out.print("||");
+			}
+			for (int j=0; j<i*SCALE; j++) {
+				System.out.print(":::");
+			}
+			for (int j=0; j<SCALE; j++) {
+				System.out.print("\\");
+			}
+			for (int j=0; j<SCALE; j++) {
+				System.out.print("__");
+			}
+			System.out.println();
+		}
+		
+		// line2
+		for (int i=0; i<SCALE; i++) {
+			System.out.print("|");
+		}
+		for (int i=0; i<24*SCALE*SCALE; i++) {
+			System.out.print("\"");
+		}
+		for (int i=0; i<SCALE; i++) {
+			System.out.print("|");
+		}
+		System.out.println();
 	}
 	
 	public static void eiffelTower() {
