@@ -36,7 +36,7 @@ public class BuildingMaker {
 	public static void spaceNeedle() {
 		// antenna
 		for (int i=0; i<4*SCALE; i++) {
-			for (int j=0; j<(SCALE*3)*(SCALE*4); j++) {
+			for (int j=0; j<12*SCALE*SCALE; j++) {
 				System.out.print(" ");
 			}
 			for (int j=0; j<1*SCALE; j++) {
@@ -47,29 +47,75 @@ public class BuildingMaker {
 		
 		// head1
 		for (int i=0; i<4*SCALE; i++) {
-			for (int j=1; j<=(SCALE*3)*(SCALE*4)-(i+1)*(SCALE*3); j++) {
+			for (int j=0; j<12*SCALE*SCALE-(i+1)*(SCALE*3); j++) {
 				System.out.print(" ");
 			}
-			for (int j=0; j<1*SCALE; j++) {
+			for (int j=0; j<SCALE; j++) {
 				System.out.print("__");
 			}
-			for (int j=0; j<1*SCALE; j++) {
+			for (int j=0; j<SCALE; j++) {
 				System.out.print("/");
 			}
 			for (int j=0; j<i*SCALE; j++) {
 				System.out.print(":::");
 			}
-			for (int j=0; j<1*SCALE; j++) {
+			for (int j=0; j<SCALE; j++) {
 				System.out.print("||");
 			}
 			for (int j=0; j<i*SCALE; j++) {
 				System.out.print(":::");
 			}
-			for (int j=0; j<1*SCALE; j++) {
+			for (int j=0; j<SCALE; j++) {
 				System.out.print("\\");
 			}
-			for (int j=0; j<1*SCALE; j++) {
+			for (int j=0; j<SCALE; j++) {
 				System.out.print("__");
+			}
+			System.out.println();
+		}
+		
+		// line?
+		for (int i=0; i<SCALE; i++) {
+			System.out.print("|");
+		}
+		for (int i=0; i<24*SCALE*SCALE; i++) {
+			System.out.print("\"");
+		}
+		for (int i=0; i<SCALE; i++) {
+			System.out.print("|");
+		}
+		System.out.println();
+		
+		// chin
+		for (int i=0; i<4*SCALE; i++) {
+			for (int j=0; j<i*SCALE; j++) {
+				System.out.print("  ");
+			}
+			for (int j=0; j<SCALE; j++) {
+				System.out.print("\\");
+			}
+			for (int j=0; j<SCALE; j++) {
+				System.out.print("_");
+			}
+			for (int j=12*SCALE*SCALE-(i)*(SCALE-1+SCALE); j-SCALE>i; j--) {
+				System.out.print("/\\"); 
+			}
+			for (int j=0; j<SCALE; j++) {
+				System.out.print("_");
+			}
+			for (int j=0; j<SCALE; j++) {
+				System.out.print("/");
+			}
+			System.out.println();
+		}
+		
+		// neck
+		for (int i=0; i<4*SCALE; i++) {
+			for (int j=0; j<12*SCALE*SCALE; j++) {
+				System.out.print(" ");
+			}
+			for (int j=0; j<1*SCALE; j++) {
+				System.out.print("||");
 			}
 			System.out.println();
 		}
