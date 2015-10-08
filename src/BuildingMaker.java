@@ -165,13 +165,13 @@ public class BuildingMaker {
 			for (int j=0; j<scale; j++) {
 				System.out.print("|");
 			}
-			for (int j=0; j<1*scale; j++) {
+			for (int j=0; j<scale; j++) {
 				System.out.print("%%");
 			}
-			for (int j=0; j<1*scale; j++) {
+			for (int j=0; j<scale; j++) {
 				System.out.print("||");
 			}
-			for (int j=0; j<1*scale; j++) {
+			for (int j=0; j<scale; j++) {
 				System.out.print("%%");
 			}
 			for (int j=0; j<scale; j++) {
