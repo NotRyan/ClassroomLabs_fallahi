@@ -6,7 +6,7 @@
  */
 public class SpaceNeedle {
 	
-	final static int SIZE=4;
+	final static int SIZE=7;
 	
 	public static void main(String[] args) {
 		pole();
@@ -59,17 +59,17 @@ public class SpaceNeedle {
 		}
 	}
 	public static void body(){
-		for (int i=0; i<=SIZE*4; i++){
-			for (int j=0; j<(3*SIZE)-3; j++) {
+		for (int i=0; i<=SIZE*SIZE; i++){
+			for (int j=0; j<(3*SIZE)-(SIZE-1); j++) {
 				System.out.print(" ");
 			}
 				System.out.print("|");
-			for (int j=0; j<(SIZE/4); j++) {
-				System.out.print("%%");
+			for (int j=0; j<(SIZE-2); j++) {		//Number of % on each side is size-2
+				System.out.print("%");
 			}
 				System.out.print("||");
-			for (int j=0; j<SIZE/4; j++) {
-				System.out.print("%%");
+			for (int j=0; j<SIZE-2; j++) {
+				System.out.print("%");
 			}
 				System.out.print("|");
 			System.out.println();
